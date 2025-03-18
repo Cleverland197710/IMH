@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
+    public float movSpeed = 5f;
+    
+    public Rigidbody2D rb;
 
-    public float movSpeed;
-    float speedX, speedY;
-    Rigidbody2D rb;
+    Vector2 movement;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +20,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speedX = Input.GetAxisRaw("Horizontal") * movSpeed;
-        speedY = Input.GetAxisRaw("Vertical") * movSpeed;
-        rb.velocity = new Vector2(speedX, speedY);
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * movSpeed * Time.fixedDeltaTime);
     }
 }
