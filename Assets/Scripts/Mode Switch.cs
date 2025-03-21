@@ -14,25 +14,33 @@ public class ModeSwitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKeyUp(KeyCode.LeftShift))
         {
-            if(Walk == isActiveAndEnabled)
-            {
-                Walk.SetActive(false);
-                Throw.SetActive(true);
-            }
 
-            if (Throw == isActiveAndEnabled)
-            {
-                Walk.SetActive(true);
-                Throw.SetActive(false);
-            }
+              if (GetComponent<PlayerMovement>().enabled == false && GetComponent<PlayerMShooting>().enabled == true)
+              {
+                  Debug.Log("WALK!");
+                  GetComponent<PlayerMovement>().enabled = true;
+                  //GetComponent<Animator>().enabled = false;
+                  GetComponent<PlayerMShooting>().enabled = false;
+                  GetComponent<Throwing>() .enabled = false;
+              }
+
+              if (GetComponent<PlayerMovement>().enabled == true && GetComponent<PlayerMShooting>().enabled == false)
+              {
+                  Debug.Log("Pew!");
+                  GetComponent<PlayerMovement>().enabled = false;
+                  //GetComponent <Animator>().enabled = false;
+                  GetComponent<PlayerMShooting>().enabled = true;
+                  GetComponent <Throwing>() .enabled = true;
+              }
+            
         }
     }
 }
