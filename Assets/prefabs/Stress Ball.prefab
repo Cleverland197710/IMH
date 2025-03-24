@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5958721554762566184}
   - component: {fileID: 425658491251913421}
   - component: {fileID: 2436887636360923452}
+  - component: {fileID: -2746373091203688024}
   m_Layer: 0
   m_Name: Stress Ball
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: 19541856e06995c47b273f6413e452d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101,7 +102,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.5
+  m_GravityScale: 0.05
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -158,3 +159,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.86, y: 0.87}
   m_EdgeRadius: 0
+--- !u!114 &-2746373091203688024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7666342781505052535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2361221b2ac9b5c4a8b088255c6db458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  StressBall: {fileID: 0}
+  colliding: 0
+  pickUp: 0
