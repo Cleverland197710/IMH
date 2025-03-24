@@ -574,10 +574,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2d090ba37ea6f34695e100d8a7281cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 614834073}
   ThrowMode: 0
   WalkMode: 0
-  Walk: {fileID: 0}
-  Throw: {fileID: 0}
 --- !u!70 &614834080
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
