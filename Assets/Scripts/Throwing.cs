@@ -7,6 +7,7 @@ public class Throwing : MonoBehaviour
 
     public Transform AimPoint;
     public GameObject ballPrefab;
+    public static bool hasBall;
     public static int ball;
 
     public float bulletForce = 20f;

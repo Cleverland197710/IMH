@@ -20,11 +20,13 @@ public class BallCollect : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        /*if (collision.gameObject.CompareTag("Player")) ;
+        if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            CoinCounter.instance.IncreaseCoins(value);
-        }*/
+            Debug.Log("Kicked?");
+            Throwing.ball = 1;
+            
+        }
 
     }
 }
