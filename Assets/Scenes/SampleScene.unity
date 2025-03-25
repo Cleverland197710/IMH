@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 614834073}
-  StressBall: {fileID: 2005599007}
+  StressBall: {fileID: 0}
   colliding: 0
   pickUp: 0
 --- !u!1001 &973145479
@@ -1083,11 +1083,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e253651e6450676478d473fbe598616f, type: 3}
---- !u!61 &2005599007 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 2436887636360923452, guid: bedef7d5feb724544ae45e32bcd1dea1, type: 3}
-  m_PrefabInstance: {fileID: 1828704549}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1719209886430210656
 PrefabInstance:
   m_ObjectHideFlags: 0

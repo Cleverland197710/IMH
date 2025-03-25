@@ -21,6 +21,8 @@ public class ModeSwitch : MonoBehaviour
         isInThrowMode = false;
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
