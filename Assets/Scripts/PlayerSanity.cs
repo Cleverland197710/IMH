@@ -2,30 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallCollect : MonoBehaviour
+public class PlayerSanity : MonoBehaviour
 {
+
+    public int Sanity;
+    public int maxSanity = 10;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-
+        Sanity = maxSanity;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    public void TakeDamage(int amount)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        Sanity -= amount;
+
+        if (Sanity < 0)
         {
             Destroy(gameObject);
-            Debug.Log("Kicked?");
-            Throwing.ball = 1;
-            
         }
+    }
 
+    void Kill()
+    {
+        Debug.Log("You're Dead :P");
     }
 }
