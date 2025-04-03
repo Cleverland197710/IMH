@@ -13,10 +13,13 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
 
+    public bool LeavingAndEntering;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        LeavingAndEntering = false;
     }
 
     // Update is called once per frame
@@ -28,6 +31,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        if (LeavingAndEntering == true)
+        {
+
+        }
     }
 
     private void FixedUpdate()
