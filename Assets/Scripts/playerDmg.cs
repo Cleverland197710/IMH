@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerDmg : MonoBehaviour
+public class Dmg : MonoBehaviour
 {
     public int Damage = 2;
     private PlayerSanity PlayerSanity;

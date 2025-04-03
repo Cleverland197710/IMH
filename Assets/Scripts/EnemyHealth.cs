@@ -2,30 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSanity : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
 
-    public int Sanity;
-    public int maxSanity = 10;
-    
+    public int Health;
+    public int maxHealth = 10;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Sanity = maxSanity;
+        Health = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void TakeDamage(int amount)
     {
-        Sanity -= amount;
+        Health -= amount;
 
-        if (Sanity < 0)
+        if (Health < 0)
         {
             Destroy(gameObject);
         }
@@ -33,11 +33,6 @@ public class PlayerSanity : MonoBehaviour
 
     void Kill()
     {
-        Debug.Log("You're Dead :P");
-    }
-
-    void ReloadScene()
-    {
-
+        Debug.Log("Nice Kill Loser");
     }
 }

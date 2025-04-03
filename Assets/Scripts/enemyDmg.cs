@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerDmg : MonoBehaviour
+public class enemyDmg : MonoBehaviour
 {
     public int Damage = 2;
-    private PlayerSanity PlayerSanity;
+    private EnemyHealth EnemyHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -21,13 +21,13 @@ public class playerDmg : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Enemy")
         {
-            if (PlayerSanity == null)
+            if (EnemyHealth == null)
             {
-                PlayerSanity = collision.gameObject.GetComponent<PlayerSanity>();
+                EnemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
             }
-            PlayerSanity.TakeDamage(Damage);
+            EnemyHealth.TakeDamage(Damage);
         }
     }
 }

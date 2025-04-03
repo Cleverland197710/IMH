@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Overlap
+  - Enemy
   layers:
   - Default
   - TransparentFX
