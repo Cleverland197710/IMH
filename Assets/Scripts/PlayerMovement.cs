@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         LeavingAndEntering = false;
+        
     }
 
     // Update is called once per frame
