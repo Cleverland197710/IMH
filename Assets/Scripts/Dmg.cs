@@ -29,5 +29,6 @@ public class playerDmg : MonoBehaviour
             }
             PlayerSanity.TakeDamage(Damage);
         }
+
     }
 }

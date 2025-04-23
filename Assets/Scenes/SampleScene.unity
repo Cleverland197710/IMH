@@ -720,6 +720,7 @@ GameObject:
   - component: {fileID: 614834079}
   - component: {fileID: 614834080}
   - component: {fileID: 614834081}
+  - component: {fileID: 614834082}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -955,6 +956,19 @@ MonoBehaviour:
   Sanity: 0
   maxSanity: 10
   animator: {fileID: 0}
+--- !u!114 &614834082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614834071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48bf856349f2d3488b49397296df96f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Doors: {fileID: 0}
 --- !u!1 &865573474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,6 +1258,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1522563629421805444, guid: e35f78058abfb7b49a2ebe8c672a11db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117856630782385823, guid: e35f78058abfb7b49a2ebe8c672a11db, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1713,6 +1731,7 @@ GameObject:
   - component: {fileID: 1646021564}
   - component: {fileID: 1646021563}
   - component: {fileID: 1646021562}
+  - component: {fileID: 1646021565}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1795,12 +1814,47 @@ Transform:
   m_GameObject: {fileID: 1646021561}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.03, y: -8.09, z: 0}
+  m_LocalPosition: {x: 88.4, y: 20.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1646021565
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646021561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
 --- !u!1 &1755930715
 GameObject:
   m_ObjectHideFlags: 0
