@@ -6,11 +6,20 @@ TagManager:
   tags:
   - Overlap
   - Enemy
+  - GunBarrel
+  - GunBody
+  - GunMuzzle
+  - GunClip
+  - Weapon
+  - GunProjectile
+  - Wall
+  - GunSight
+  - SmokeTrail
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Path
   - Water
   - UI
   - 
