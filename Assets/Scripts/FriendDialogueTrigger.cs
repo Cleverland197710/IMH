@@ -25,23 +25,33 @@ public class FriendDialogueTrigger : MonoBehaviour
         Near = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        Near = true;
+        Near = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKey(KeyCode.E))
         {
             talking = true;
+            Invoke("Shh", 1f);
         }
 
         if (talking && Near)
         {
             Convo = true;
-            Debug.Log("Rizz Time");
+        }
+
+        if (Convo)
+        {
+            FindAnyObjectByType<DialogueManager>().StartDialogue(dialogue);
+        }
+
+        if (!talking || !Near)
+        {
+            Convo = false;
         }
 
         if (Input.GetKeyUp(KeyCode.Q))
@@ -58,9 +68,9 @@ public class FriendDialogueTrigger : MonoBehaviour
         }
     }
 
-    private void Speak()
+    private void Shh()
     {
-        talking = true;
+        talking = false;
     }
 
     private void Falseify()
