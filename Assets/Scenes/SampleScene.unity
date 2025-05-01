@@ -812,7 +812,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 0f39a9205e4394ee1b6ba8269428d176, type: 3}
+  m_Sprite: {fileID: -1682491296, guid: ff92e9e50d58cee478e6cc5101c11204, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -988,7 +988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &657979133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2459,11 +2459,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 567456800590794712, guid: f229b6fbebd860c4d878fe868b1d4ddf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.62
+      value: -0.999
       objectReference: {fileID: 0}
     - target: {fileID: 567456800590794712, guid: f229b6fbebd860c4d878fe868b1d4ddf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 100.59
+      value: 100.211
       objectReference: {fileID: 0}
     - target: {fileID: 567456800590794712, guid: f229b6fbebd860c4d878fe868b1d4ddf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2501,6 +2501,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sam Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 8319146766365133045, guid: f229b6fbebd860c4d878fe868b1d4ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012993448533690204, guid: f229b6fbebd860c4d878fe868b1d4ddf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1507de7461147d343a96adb5c7249e7b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
