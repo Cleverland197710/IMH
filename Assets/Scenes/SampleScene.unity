@@ -2252,7 +2252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1865419081
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2443,6 +2443,10 @@ PrefabInstance:
     - target: {fileID: 6130829094487858507, guid: cbf0b5010c1ecf04db6215207b63b0f7, type: 3}
       propertyPath: m_Name
       value: Enemy Hunting
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130829094487858507, guid: cbf0b5010c1ecf04db6215207b63b0f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
