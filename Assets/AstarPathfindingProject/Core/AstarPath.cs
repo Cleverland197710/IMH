@@ -832,9 +832,9 @@ public class AstarPath : VersionedMonoBehaviour {
 			if (logPathResults == PathLog.InGame) {
 				inGameDebugPath = debug;
 			} else if (path.error) {
-				Debug.LogWarning(debug);
+				//Debug.LogWarning(debug);
 			} else {
-				Debug.Log(debug);
+				//Debug.Log(debug);
 			}
 		}
 	}
@@ -1379,7 +1379,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		if (!Application.isPlaying) return;
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("+++ AstarPath Component Destroyed - Cleaning Up Pathfinding Data +++");
+			//Debug.Log("+++ AstarPath Component Destroyed - Cleaning Up Pathfinding Data +++");
 
 		if (active != this) return;
 
@@ -1397,7 +1397,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		pathProcessor.queue.TerminateReceivers();
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Processing Possible Work Items");
+			//Debug.Log("Processing Possible Work Items");
 
 		// Stop the graph update thread (if it is running)
 		graphUpdates.DisableMultithreading();
@@ -1413,14 +1413,14 @@ public class AstarPath : VersionedMonoBehaviour {
 		pathReturnQueue.ReturnPaths(false);
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Destroying Graphs");
+			//Debug.Log("Destroying Graphs");
 
 
 		// Clean up graph data
 		data.OnDestroy();
 
 		if (logPathResults == PathLog.Heavy)
-			Debug.Log("Cleaning up variables");
+			//Debug.Log("Cleaning up variables");
 
 		// Clear variables up, static variables are good to clean up, otherwise the next scene might get weird data
 

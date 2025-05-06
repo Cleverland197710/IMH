@@ -54,7 +54,7 @@ public class FriendDialogueTrigger : MonoBehaviour
             Convo = false;
         }
 
-        if (Input.GetKeyUp(KeyCode.Q))
+        /*if (Input.GetKeyUp(KeyCode.Q))
         {
             DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
             if (dialogueManager != null)
@@ -65,7 +65,7 @@ public class FriendDialogueTrigger : MonoBehaviour
             {
                 Debug.LogError("DialogueManager not found in the scene!");
             }
-        }
+        }*/
     }
 
     private void Shh()
