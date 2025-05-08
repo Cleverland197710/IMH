@@ -98,7 +98,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a3f4a26edd26b7548a5cca2d556272e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 399b25d9fade4894c8420165238b9c17, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -440,6 +440,14 @@ PrefabInstance:
     - target: {fileID: 5793345943555042366, guid: e253651e6450676478d473fbe598616f, type: 3}
       propertyPath: m_Name
       value: Border
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059316437829116575, guid: e253651e6450676478d473fbe598616f, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0403409
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059316437829116575, guid: e253651e6450676478d473fbe598616f, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.02017051
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1079,7 +1087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368527036291469618, guid: cbf0b5010c1ecf04db6215207b63b0f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.6
+      value: 12.87
       objectReference: {fileID: 0}
     - target: {fileID: 368527036291469618, guid: cbf0b5010c1ecf04db6215207b63b0f7, type: 3}
       propertyPath: m_LocalPosition.z
