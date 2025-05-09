@@ -15,6 +15,7 @@ TagManager:
   - Wall
   - GunSight
   - SmokeTrail
+  - Ammo
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,8 @@ public class ModeSwitch : MonoBehaviour
 
     private bool isInWalkMode = false;
     private bool isInThrowMode = false;
+    
+    public bool canThrow;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,9 @@ public class ModeSwitch : MonoBehaviour
         // Initial setup based on starting mode
         isInWalkMode = true;
         isInThrowMode = false;
+
+        canThrow = false;
+
     }
 
 
@@ -28,7 +33,7 @@ public class ModeSwitch : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            if (isInWalkMode)
+            if (isInWalkMode && canThrow)
             {
                 // Switch to Throw mode
                 Debug.Log("Pew!"); // You can customize this message
@@ -54,5 +59,10 @@ public class ModeSwitch : MonoBehaviour
                 isInThrowMode = false;
             }
         }
+
+        
+
     }
+
+    
 }
